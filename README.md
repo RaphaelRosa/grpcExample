@@ -43,3 +43,5 @@ To start the python client execute the following command:
 1. `$ uvicorn client_python.main:app --reload`
 
 This will start a client [FastAPI](https://fastapi.tiangolo.com) app on `http://localhost:8000`
+
+A file containing some requests examples can be found [here](client_python/requests.http).
