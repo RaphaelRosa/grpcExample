@@ -1,0 +1,15 @@
+### Completa uma task
+PUT http://localhost:3000/complete/1
+
+### Busca todas as tasks
+GET http://localhost:3000/listTasks
+Accept: application/json
+
+### Cria uma nova task
+POST http://localhost:3000/createTask
+Content-Type: application/json
+
+{
+  "title": "task 2",
+  "description": "some sample task"
+}

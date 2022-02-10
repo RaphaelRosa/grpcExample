@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package TaskListPackage;
+
+service TaskList {
+    rpc CreateTask (CreateTaskMessage) returns (TaskCreatedMessage);
+    rpc ListTasks (Empty) returns (TaskListMessage);
+    rpc CompleteTask (CompleteTaskMessage) returns (Empty);
+}
+
+message Empty {}
+
+message CreateTaskMessage {
+    string title = 1;
+    string description = 2;
+}
+
+message TaskCreatedMessage {
+    uint32 id = 1;
+}
+
+message TaskMessage {
+    uint32 id = 1;
+    string title = 2;
+    string description = 3;
+    bool completed = 4;
+}
+
+message TaskListMessage {
+    repeated TaskMessage tasks = 1;
+}
+
+message CompleteTaskMessage {
+    uint32 id = 1;
+}

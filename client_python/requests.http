@@ -1,0 +1,17 @@
+### Complete a task
+PUT http://localhost:8000/complete/2
+Content-Type: application/json
+
+### Gets all tasks
+GET http://localhost:8000/listTasks
+Accept: application/json
+
+### Create a task
+POST http://localhost:8000/createTask
+Content-Type: application/json
+
+{
+  "title": "Some python task",
+  "description": "A complex python task"
+}
+

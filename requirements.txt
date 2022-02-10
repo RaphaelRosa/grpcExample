@@ -1,0 +1,17 @@
+anyio==3.5.0
+asgiref==3.5.0
+click==8.0.3
+fastapi==0.73.0
+grpcio==1.43.0
+grpcio-tools==1.43.0
+h11==0.13.0
+idna==3.3
+orjson==3.6.6
+peewee==3.14.8
+protobuf==3.19.4
+pydantic==1.9.0
+six==1.16.0
+sniffio==1.2.0
+starlette==0.17.1
+typing_extensions==4.0.1
+uvicorn==0.17.4
